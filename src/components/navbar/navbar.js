@@ -22,7 +22,6 @@ class Navbar extends React.Component {
                      <li><a href={navlink.home}>Home</a></li>
                      <li><a href={navlink.about}>About</a></li>
                      <li><a href={navlink.portfolio}>Portfolio</a></li>
-                     <li><a href={navlink.blog}>Blog</a></li>
                      <li><a href={navlink.contact}>Contact</a></li>
                  </ul>
               </div>
