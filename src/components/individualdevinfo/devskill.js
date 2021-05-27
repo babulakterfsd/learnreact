@@ -1,5 +1,5 @@
 import React from 'react';
-import Classes from '../individualdevinfo/devskill.module.css';
+// import Classes from '../individualdevinfo/devskill.module.css';
 
 
 class Devskill extends React.Component {
