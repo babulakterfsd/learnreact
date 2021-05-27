@@ -2,7 +2,9 @@
     height: auto;
     width: 100%;
     padding: 15px 0px;
-    background-color: #FFA898;
+    /* background-color: #FFA898; */
+    background: rgb(46, 92, 92);
+    color: rgb(124, 72, 72);
 }
 .logo {
     text-decoration: none;
@@ -11,6 +13,7 @@
     font-weight: bolder;
     margin-left: 50px;
     cursor: pointer;
+    color: white;
 }
 .logo:hover {
     color: tomato;
@@ -28,6 +31,7 @@
     padding: 5px;
     font-weight: 400;
     margin-right: 15px;
+    color: white;
 }
 .navbar ul li a:hover {
     color: tomato;

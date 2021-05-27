@@ -9,12 +9,11 @@ class Devskill extends React.Component {
               <div>
                 <h6><u>Skills:</u></h6>
                 <div className="skillscontainer mx-5 mb-4">
-                  <span class="badge bg-primary m-2">Javascript</span>
-                  <span class="badge bg-primary m-2">React</span>
-                  <span class="badge bg-primary m-2">redux</span>
-                  <span class="badge bg-primary m-2">MonggoDB</span>
-                  <span class="badge bg-primary m-3">Node</span>
-                  <span class="badge bg-primary">Express</span>
+                  <span class="badge bg-primary m-2">{this.props.singleskill1}</span>
+                  <span class="badge bg-primary m-2">{this.props.singleskill2}</span>
+                  <span class="badge bg-primary m-2">{this.props.singleskill3}</span>
+                  <span class="badge bg-primary m-2">{this.props.singleskill4}</span>
+                  <span class="badge bg-primary m-2">{this.props.singleskill5}</span>
                 </div>
               </div>
             </>

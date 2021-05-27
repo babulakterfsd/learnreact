@@ -18,7 +18,7 @@ class App extends React.Component {
               <div className="col-sm-6">
                  <Devlist/>
               </div>
-              <div className="col-sm-6 mt-5">
+              <div className="col-sm-6 mt-5 d-flex justify-content-center align-self-center">
                 <Devprofile/>
               </div>
             </div>
