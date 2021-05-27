@@ -9,7 +9,7 @@ class Navbar extends React.Component {
         return (
             <>
               <div className={Classes.navbar}>
-                 <a href="https://learnreactwithbabul.netlify.com" className={Classes.logo}>Babul</a>
+                 <a href="https://learnreactwithbabul.netlify.app" className={Classes.logo}>Babul</a>
                  <ul>
                      <li><a href="https://babulakter.com">Home</a></li>
                      <li><a href="https://www.babulakter.com/about.html">About</a></li>
