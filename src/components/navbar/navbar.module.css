@@ -1,0 +1,32 @@
+.navbar {
+    height: auto;
+    width: 100%;
+    padding: 15px 0px;
+}
+.logo {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+.logo:hover {
+    color: tomato;
+}
+.navbar ul {
+   float: right;
+   list-style: none;
+   margin-right: 40px;
+}
+.navbar ul li {
+   float: left;
+}
+.navbar ul li a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.navbar ul li a:hover {
+    color: tomato;
+}
