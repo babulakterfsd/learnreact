@@ -18,7 +18,7 @@ class App extends React.Component {
               <div className="col-sm-6">
                  <Devlist/>
               </div>
-              <div className="col-sm-6">
+              <div className="col-sm-6 mt-5">
                 <Devprofile/>
               </div>
             </div>
