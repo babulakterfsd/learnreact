@@ -1,5 +1,5 @@
 import React from 'react'
-import Classes from '../alldevlist/devlist.module.css'
+// import Classes from '../alldevlist/devlist.module.css'
 
 
 
