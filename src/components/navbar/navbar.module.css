@@ -9,6 +9,7 @@
     font-size: 20px;
     font-weight: bolder;
     margin-left: 50px;
+    cursor: pointer;
 }
 .logo:hover {
     color: tomato;
