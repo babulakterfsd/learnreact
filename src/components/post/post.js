@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card,ListGroup,ListGroupItem} from 'react-bootstrap'
+import {Card} from 'react-bootstrap'
 
 
 class Post extends React.Component {
