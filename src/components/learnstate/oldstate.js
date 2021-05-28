@@ -67,13 +67,13 @@ class Learn extends React.Component {
            <h1 className="text-center"><span>{this.state.minute}</span> : <span>{this.state.count}</span></h1>
            </div>
            <div className="buttonContainer text-center mb-3">
-               <button disabled = {this.state.isDisabled} className="increment" onClick = {this.increment} style={{marginRight: '20px'}}>+</button>
-               <button disabled = {this.state.isDisabled} className="decrement" onClick = {this.decrement} style={{marginLeft: '20px'}}>-</button>
+               <button disabled = {this.state.isDisabled} className="increment btn btn-success btn-sm" onClick = {this.increment} style={{marginRight: '20px'}}>+</button>
+               <button disabled = {this.state.isDisabled} className="decrement btn btn-danger btn-sm" onClick = {this.decrement} style={{marginLeft: '20px'}}>-</button>
            </div>
            <div className="timerContainer text-center">
-               <button className="start mx-2" onClick = {this.starter}>Start</button>
-               <button className="pause mx-2" onClick = {this.pauser}>Pause</button>
-               <button className="reset mx-2" onClick = {this.reseter}>Reset</button>
+               <button className="start mx-2 btn btn-success" onClick = {this.starter}>Start</button>
+               <button className="pause mx-2 btn btn-warning" onClick = {this.pauser}>Pause</button>
+               <button className="reset mx-2 btn btn-danger" onClick = {this.reseter}>Reset</button>
            </div>
            </div>
        )

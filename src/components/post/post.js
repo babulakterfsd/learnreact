@@ -6,7 +6,7 @@ class Post extends React.Component {
     render() {
         return (
             <>
-              <div className="singlepostcontainer pt-4 pb-1 px-2 shadow-lg" style={{background: '#2E5C5C', borderBottomRightRadius: '50px'}}>
+              <div className="singlepostcontainer pt-4 pb-1 px-2 shadow-lg" style={{background: '#ddd', boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'}}>
                  <div className="post mb-5">
                  <Card>
                     <Card.Img variant="top" src="https://picsum.photos/200/100" />
