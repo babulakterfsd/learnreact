@@ -1,5 +1,4 @@
 import React from 'react';
-import '../learn/learn.css';
 
 class Learn extends React.Component {
 
@@ -64,17 +63,17 @@ class Learn extends React.Component {
        return (
            <div className = "mainStateContainer">
            <div className="stateContainer">
-            <h3>A Simple Time Counter App</h3>
-           <h1><span>{this.state.minute}</span> : <span>{this.state.count}</span></h1>
+            <h3 className="text-center">A Simple Time Counter App</h3>
+           <h1 className="text-center"><span>{this.state.minute}</span> : <span>{this.state.count}</span></h1>
            </div>
-           <div className="buttonContainer">
-               <button disabled = {this.state.isDisabled} className="increment" onClick = {this.increment}>+</button>
-               <button disabled = {this.state.isDisabled} className="decrement" onClick = {this.decrement}>-</button>
+           <div className="buttonContainer text-center mb-3">
+               <button disabled = {this.state.isDisabled} className="increment" onClick = {this.increment} style={{marginRight: '20px'}}>+</button>
+               <button disabled = {this.state.isDisabled} className="decrement" onClick = {this.decrement} style={{marginLeft: '20px'}}>-</button>
            </div>
-           <div className="timerContainer">
-               <button className="start" onClick = {this.starter}>Start</button>
-               <button className="pause" onClick = {this.pauser}>Pause</button>
-               <button className="reset" onClick = {this.reseter}>Reset</button>
+           <div className="timerContainer text-center">
+               <button className="start mx-2" onClick = {this.starter}>Start</button>
+               <button className="pause mx-2" onClick = {this.pauser}>Pause</button>
+               <button className="reset mx-2" onClick = {this.reseter}>Reset</button>
            </div>
            </div>
        )

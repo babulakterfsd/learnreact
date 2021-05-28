@@ -32,7 +32,7 @@ class Devlist extends React.Component {
         return (
             <>
               <div className="p-5 mt-5 shadow-lg" style={{background: 'rgb(46, 92, 92)', color: 'white'}}>
-                 <div style={{border: '1px solid tomato', padding: '20px'}}>
+                 <div style={{border: '1px solid tomato', padding: '30px'}}>
                     <Devbio img={devarray[0].img} name={devarray[0].name} position={devarray[0].position} company={devarray[0].company}/>
                     <Devskill singleskill1={devarray[0].skill[0]} singleskill2={devarray[0].skill[1]} singleskill3={devarray[0].skill[2]} singleskill4={devarray[0].skill[3]} singleskill5={devarray[0].skill[4]}/>
                  </div>
