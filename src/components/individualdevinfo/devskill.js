@@ -4,16 +4,18 @@ import React from 'react';
 
 class Devskill extends React.Component {
     render() {
+      let { user } = this.props;
         return (
             <>
               <div>
                 <h6><u>Skills:</u></h6>
                 <div className="skillscontainer mx-5 mb-4">
-                  <span class="badge bg-primary m-2">{this.props.singleskill1}</span>
-                  <span class="badge bg-primary m-2">{this.props.singleskill2}</span>
-                  <span class="badge bg-primary m-2">{this.props.singleskill3}</span>
-                  <span class="badge bg-primary m-2">{this.props.singleskill4}</span>
-                  <span class="badge bg-primary m-2">{this.props.singleskill5}</span>
+                  
+                  {
+                    user?.skill.map(sk => (
+                      <span className="badge bg-primary m-2">{sk}</span>
+                    ))
+                  }
                 </div>
               </div>
             </>

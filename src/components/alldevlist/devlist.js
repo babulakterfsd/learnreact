@@ -1,10 +1,21 @@
 import React from 'react'
 // import Classes from '../alldevlist/devlist.module.css'
 import Devbio from '../individualdevinfo/devbio.js'
+import Classes from '../individualdevprofile/devprofile.module.css'
 import Devskill from '../individualdevinfo/devskill.js'
+import Devcontact from '../individualdevinfo/devcontact.js'
 
 
 class Devlist extends React.Component {
+
+    state = {   
+        userDetails: null
+    }
+
+    showDetails = user => {
+        this.setState({userDetails: user});
+    }
+
     render() {
         const devarray = [
              {
@@ -30,24 +41,36 @@ class Devlist extends React.Component {
             }
         ]
         return (
-            <>
-              <div className="p-5 mt-5 shadow-lg" style={{background: 'rgb(46, 92, 92)', color: 'white'}}>
-                 <div style={{borderBottom: '1px solid tomato', padding: '5px'}}>
-                    <Devbio img={devarray[0].img} name={devarray[0].name} position={devarray[0].position} company={devarray[0].company}/>
-                    <Devskill singleskill1={devarray[0].skill[0]} singleskill2={devarray[0].skill[1]} singleskill3={devarray[0].skill[2]} singleskill4={devarray[0].skill[3]} singleskill5={devarray[0].skill[4]}/>
-                 </div>
+            <div className="listcontainer d-flex justify-content-between">
+              
+                <div className="innerlist">
+                {
+                    devarray.map(user => (
+                        <div className="p-5 shadow-lg" style={{background: 'rgb(46, 92, 92)', color: 'white'}}>
+                <div style={{borderBottom: '1px solid tomato', padding: '5px', marginBottom: '8px 0px'}}>
+                    <Devbio user = {user}/>
+                    <Devskill user={user}/>
+                    <button className="btn btn-success btn-sm my-3" onClick={() => this.showDetails(user)}>Details..</button>
+                </div>
+                </div>
+                    )) 
+                }
+                </div>
 
-                 <div style={{borderBottom: '1px solid tomato', padding: '5px'}}>
-                    <Devbio img={devarray[1].img} name={devarray[1].name} position={devarray[1].position} company={devarray[1].company}/>
-                    <Devskill singleskill1={devarray[1].skill[0]} singleskill2={devarray[1].skill[1]} singleskill3={devarray[1].skill[2]} singleskill4={devarray[1].skill[3]} singleskill5={devarray[1].skill[4]}/>
-                 </div>
-
-                 <div style={{borderBottom: '1px solid tomato', padding: '5px'}}>
-                    <Devbio img={devarray[2].img} name={devarray[2].name} position={devarray[2].position} company={devarray[2].company}/>
-                    <Devskill singleskill1={devarray[2].skill[0]} singleskill2={devarray[2].skill[1]} singleskill3={devarray[2].skill[2]} singleskill4={devarray[2].skill[3]} singleskill5={devarray[2].skill[4]}/>
-                 </div>
+                <div className="individualprofile">
+                {
+                    this.state.userDetails?
+                    <div className={Classes.profilecontainer}>
+                  <Devbio user={this.state.userDetails}/>
+                  <Devskill user={this.state.userDetails} />
+                  <Devcontact/>
               </div>
-            </>
+                    :null
+                }
+                </div>
+                 
+            </div>
+
         )
     }
 }

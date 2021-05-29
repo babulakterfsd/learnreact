@@ -7,11 +7,15 @@ import Devlist from './components/alldevlist/devlist.js'
 import Devprofile from './components/individualdevprofile/devprofile.js'
 import Post from './components/post/post.js'
 import Oldstate from './components/learnstate/oldstate.js'
+import Handleevent from './components/events/events.js'
 
 class App extends React.Component {
+
   render() {
     return (
       <>
+
+
         <Navbar/>
 
 
@@ -19,11 +23,8 @@ class App extends React.Component {
         <section className="dev py-5">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-12">
                  <Devlist/>
-              </div>
-              <div className="col-lg-6 mt-5 d-flex justify-content-center align-self-center">
-                <Devprofile/>
               </div>
             </div>
           </div>
@@ -35,34 +36,19 @@ class App extends React.Component {
         <section className="post bg-dark" style={{padding: '100px 0px'}}>
          <h2 className="text-center mb-5" style={{color: 'tomato'}}><u>BLOG</u></h2>
            <div className="container-fluid">
-             <div className="row mb-3">
-               <div className="col-md-4">
-                 <Post/>
-               </div>
-               <div className="col-md-4">
-                 <Post/>
-               </div>
-               <div className="col-md-4">
-                 <Post/>
-               </div>
-             </div>
-             <div className="row">
-               <div className="col-md-4">
-                 <Post/>
-               </div>
-               <div className="col-md-4">
-                 <Post/>
-               </div>
-               <div className="col-md-4">
-                 <Post/>
-               </div>
+             <div className="row mb-3 d-flex  flex-wrap justify-content-between">
+             {
+               [1,2,3,4,5,6].map(post => {
+                 return <div style={{height: 'auto', width: '400px'}}><Post/></div>
+               })
+             }
              </div>
            </div>
         </section>
 
 
 
-        <section className="statecontainer" style={{padding: '150px 0px'}}>
+        <section className="state" style={{padding: '150px 0px'}}>
            <div className="container-fluid">
              <div className="row">
                <div className="col-12">
@@ -71,9 +57,35 @@ class App extends React.Component {
              </div>
            </div>
         </section>
+
+
+
+      <Handleevent/>
+
+
+
+
+
+
+
+
       </>
     )
   }
 }
 
+
+
 export default App;
+
+
+
+
+
+
+// let person = {
+//   name: 'someone',
+//   age: 25
+// }
+
+// console.log(person?.address?.location ? 'something' : undefined)
