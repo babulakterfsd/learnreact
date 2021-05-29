@@ -1,5 +1,4 @@
 import React from 'react'
-// import Classes from '../individualdevinfo/devbio.module.css'
 
 
 class Devbio extends React.Component {

@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Navbar from './components/navbar/navbar.js';
 import Devlist from './components/alldevlist/devlist.js'
-import Devprofile from './components/individualdevprofile/devprofile.js'
 import Post from './components/post/post.js'
 import Oldstate from './components/learnstate/oldstate.js'
 import Handleevent from './components/events/events.js'
