@@ -1,5 +1,4 @@
 import React from 'react'
-// import Classes from '../alldevlist/devlist.module.css'
 import Devbio from '../individualdevinfo/devbio.js'
 import Classes from '../individualdevprofile/devprofile.module.css'
 import Devskill from '../individualdevinfo/devskill.js'
@@ -41,7 +40,7 @@ class Devlist extends React.Component {
             }
         ]
         return (
-            <div className="listcontainer d-flex justify-content-between">
+            <div className="listcontainer d-lg-flex justify-content-between">
               
                 <div className="innerlist">
                 {
@@ -57,7 +56,7 @@ class Devlist extends React.Component {
                 }
                 </div>
 
-                <div className="individualprofile">
+                <div className="individualprofile mt-5">
                 {
                     this.state.userDetails?
                     <div className={Classes.profilecontainer}>

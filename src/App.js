@@ -35,10 +35,10 @@ class App extends React.Component {
         <section className="post bg-dark" style={{padding: '100px 0px'}}>
          <h2 className="text-center mb-5" style={{color: 'tomato'}}><u>BLOG</u></h2>
            <div className="container-fluid">
-             <div className="row mb-3 d-flex  flex-wrap justify-content-between">
+             <div className="row mb-3 d-flex flex-wrap justify-content-between">
              {
                [1,2,3,4,5,6].map(post => {
-                 return <div style={{height: 'auto', width: '400px'}}><Post/></div>
+                 return <div className="col-md-4 mb-3"><Post/></div>
                })
              }
              </div>
@@ -76,15 +76,3 @@ class App extends React.Component {
 
 
 export default App;
-
-
-
-
-
-
-// let person = {
-//   name: 'someone',
-//   age: 25
-// }
-
-// console.log(person?.address?.location ? 'something' : undefined)
