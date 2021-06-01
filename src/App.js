@@ -8,6 +8,7 @@ import Post from './components/post/post.js'
 import Oldstate from './components/learnstate/oldstate.js'
 import HandleForm from './components/events/events.js'
 import Uncontrolledform from './components/events/uncontrolledform.js'
+import Controlledform from './components/events/controlledform.js'
 
 class App extends React.Component {
 
@@ -62,7 +63,7 @@ class App extends React.Component {
 
       <HandleForm/>
       <Uncontrolledform/>
-
+      <Controlledform/>
 
 
 

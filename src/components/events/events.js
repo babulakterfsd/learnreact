@@ -73,13 +73,13 @@ class HandleForm extends React.Component {
                                         Male
                                     </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                     <input class="form-check-input" type="radio" name="gender" value="Female"  id="flexRadioDefault1"  onChange={this.changeValue} />
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Female
                                     </label>
                                     </div>
-                                    <div class="form-check mb-3">
+                                    <div className="form-check mb-3">
                                     <input class="form-check-input" type="radio" name="gender" value="Other"  id="flexRadioDefault1"  onChange={this.changeValue} />
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         other
@@ -88,22 +88,22 @@ class HandleForm extends React.Component {
 
                                 
                                     <span>Skills: <br/></span>
-                                    <div class="form-check form-check-inline">
+                                    <div className="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Javascript" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Javascript')} />
-                                        <label class="form-check-label" for="inlineCheckbox1">Javascript</label>
+                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Javascript</label>
                                     </div>
 
-                                    <div class="form-check form-check-inline">
+                                    <div className="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Java" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Java')} />
-                                        <label class="form-check-label" for="inlineCheckbox1">Java</label>
+                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Java</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                    <div className="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Python" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Python')} />
-                                        <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Python</label>
                                     </div>
-                                    <div class="form-check form-check-inline">
+                                    <div className="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Go" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Go')} />
-                                        <label class="form-check-label" for="inlineCheckbox1">Go</label>
+                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Go</label>
                                     </div>
 
 
@@ -118,9 +118,9 @@ class HandleForm extends React.Component {
 
 
 
-                                    <div class="form-check my-3">
+                                    <div className="form-check my-3">
                                         <input class="form-check-input" type="checkbox" name="agree" id="flexCheckDefault" onChange={this.handleCheckbox} checked={this.state.agree}/>
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label" htmlFor="flexCheckDefault">
                                             I agree with all the <a href="https://github.com/babulakterfsd">terms and conditions</a>
                                         </label>
                                     </div>
@@ -129,7 +129,7 @@ class HandleForm extends React.Component {
 
 
 
-                                  <button type="submit" class="btn btn-primary" onClick={this.showdata}>Submit</button>
+                                  <button type="submit" className="btn btn-primary" onClick={this.showdata}>Submit</button>
                               </form>
                            </div>
                        </div>
