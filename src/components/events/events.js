@@ -50,7 +50,7 @@ class HandleForm extends React.Component {
                    <h3 className="text-center mb-5"><u>Learn handling Individual form elements in React</u></h3>
                    <div className="container-fluid">
                        <div className="row">
-                           <div className="col-md-6 offset-3">
+                           <div className="col-6 offset-3">
                               <form action="#" className="form">
                                   <label htmlFor="name">Your name:</label>
                                   <input type="text" name="name" className="form-control my-2" placeholder="type your name here" value={this.state.name} onChange={this.changeValue}/>
