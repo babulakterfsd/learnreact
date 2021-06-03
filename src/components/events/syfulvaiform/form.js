@@ -83,7 +83,7 @@ class Form extends React.Component{
 
     render(){
 
-        let {username, email, password, gender, birthDate, salary, country } = this.state.newUser;
+        let {username, email, password, birthDate, salary, country } = this.state.newUser;
         let isSubmitDisabled = this.state.isAgree && this.state.isInfo;
 
 

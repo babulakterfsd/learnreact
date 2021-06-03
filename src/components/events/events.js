@@ -74,14 +74,14 @@ class HandleForm extends React.Component {
                                     </label>
                                     </div>
                                     <div className="form-check">
-                                    <input class="form-check-input" type="radio" name="gender" value="Female"  id="flexRadioDefault1"  onChange={this.changeValue} />
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    <input className="form-check-input" type="radio" name="gender" value="Female"  id="flexRadioDefault1"  onChange={this.changeValue} />
+                                    <label className="form-check-label" for="flexRadioDefault1">
                                         Female
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
-                                    <input class="form-check-input" type="radio" name="gender" value="Other"  id="flexRadioDefault1"  onChange={this.changeValue} />
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    <input className="form-check-input" type="radio" name="gender" value="Other"  id="flexRadioDefault1"  onChange={this.changeValue} />
+                                    <label className="form-check-label" for="flexRadioDefault1">
                                         other
                                     </label>
                                     </div>
@@ -95,15 +95,15 @@ class HandleForm extends React.Component {
 
                                     <div className="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Java" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Java')} />
-                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Java</label>
+                                        <label className="form-check-label" htmlFor="inlineCheckbox1">Java</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Python" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Python')} />
-                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Python</label>
+                                        <input className="form-check-input" type="checkbox" value="Python" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Python')} />
+                                        <label className="form-check-label" htmlFor="inlineCheckbox1">Python</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Go" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Go')} />
-                                        <label class="form-check-label" htmlFor="inlineCheckbox1">Go</label>
+                                        <input className="form-check-input" type="checkbox" value="Go" name="skills" onChange={this.handleSkills} checked={this.state.skills.includes('Go')} />
+                                        <label className="form-check-label" htmlFor="inlineCheckbox1">Go</label>
                                     </div>
 
 

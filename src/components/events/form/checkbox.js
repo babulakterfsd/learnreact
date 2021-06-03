@@ -7,7 +7,7 @@ export const Checkbox = props => {
         <div className="mycheckbox my-4">
 
         <label class="form-check-label" htmlFor={props.name}>{props.label}</label> <br/>
-           <div class="form-check form-check-inline">
+           <div className="form-check form-check-inline">
             <input
               name={props.name}
               type='checkbox'
@@ -18,7 +18,7 @@ export const Checkbox = props => {
               />Javascript
             </div>
 
-           <div class="form-check form-check-inline">
+           <div className="form-check form-check-inline">
             <input
               name={props.name}
               type='checkbox'
@@ -29,7 +29,7 @@ export const Checkbox = props => {
               />Python
             </div>
 
-            <div class="form-check form-check-inline">
+            <div className="form-check form-check-inline">
             <input
               name={props.name}
               type='checkbox'
@@ -40,7 +40,7 @@ export const Checkbox = props => {
               />Go
             </div>
 
-            <div class="form-check form-check-inline">
+            <div className="form-check form-check-inline">
             <input
               name={props.name}
               type='checkbox'
