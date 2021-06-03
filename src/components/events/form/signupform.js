@@ -72,7 +72,7 @@ class Signup extends React.Component {
                 <h2 className="text-center text-primary"><u>A fully custom react signup form</u></h2>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-8 offset-2">
+                        <div className="col-12 col-md-6 offset-md-3">
 
 
 

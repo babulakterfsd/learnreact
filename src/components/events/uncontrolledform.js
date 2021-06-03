@@ -17,7 +17,7 @@ class Uncontrolledform extends React.Component {
             <h3 className="text-center"><u>Uncontrolled Form</u></h3>
                   <div className="container-fluid">
                       <div className="row">
-                          <div className="col-6 offset-3">
+                          <div className="col-12 col-md-6 offset-md-3">
                           <form action="#" className="form" onSubmit={this.ucformhandler}>
                             <input className="form-control mb-2" type="text" name="username" placeholder="type your name"/>
                             <input className="form-control mb-2" type="email" name="email" placeholder="type email here"/>
