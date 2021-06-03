@@ -3,6 +3,7 @@ import Devbio from '../individualdevinfo/devbio.js'
 import Classes from '../individualdevprofile/devprofile.module.css'
 import Devskill from '../individualdevinfo/devskill.js'
 import Devcontact from '../individualdevinfo/devcontact.js'
+import Modal from './modal.js'
 
 
 class Devlist extends React.Component {
@@ -50,6 +51,7 @@ class Devlist extends React.Component {
                     <Devbio user = {user}/>
                     <Devskill user={user}/>
                     <button className="btn btn-success btn-sm my-3" onClick={() => this.showDetails(user)}>Details..</button>
+
                 </div>
                 </div>
                     )) 
@@ -75,3 +77,13 @@ class Devlist extends React.Component {
 }
 
 export default Devlist;
+
+
+
+
+
+
+
+
+
+
