@@ -14,7 +14,7 @@ export const Radiobutton = props => {
               className = 'form-check-input'
               id={props.name}
               placeholder={props.placeholder}
-              value={props.value}
+              value='Male'
               onChange={props.onChange}
            /> Male
            </div>
@@ -26,7 +26,7 @@ export const Radiobutton = props => {
             className = 'form-check-input'
             id={props.name}
             placeholder={props.placeholder}
-            value={props.value}
+            value='Female'
             onChange={props.onChange}
             /> Female
             </div>
@@ -39,7 +39,7 @@ export const Radiobutton = props => {
             className = 'form-check-input'
             id={props.name}
             placeholder={props.placeholder}
-            value={props.value}
+            value='Other'
             onChange={props.onChange}
             /> Other
             </div>

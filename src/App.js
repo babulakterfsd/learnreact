@@ -10,7 +10,7 @@ import HandleForm from './components/events/events.js'
 import Uncontrolledform from './components/events/uncontrolledform.js'
 import Controlledform from './components/events/controlledform.js'
 import Signupform from './components/events/form/signupform.js'
-import Form from './components/events/syfulvaiform/form.js'
+// import Form from './components/events/syfulvaiform/form.js'
 
 class App extends React.Component {
 
