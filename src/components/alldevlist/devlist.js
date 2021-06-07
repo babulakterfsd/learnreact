@@ -3,7 +3,6 @@ import Devbio from '../individualdevinfo/devbio.js'
 import Classes from '../individualdevprofile/devprofile.module.css'
 import Devskill from '../individualdevinfo/devskill.js'
 import Devcontact from '../individualdevinfo/devcontact.js'
-import Modal from './modal.js'
 
 
 class Devlist extends React.Component {
@@ -69,7 +68,7 @@ class Devlist extends React.Component {
                     :null
                 }
                 </div>
-                 
+                                                                      
             </div>
 
         )
@@ -77,13 +76,3 @@ class Devlist extends React.Component {
 }
 
 export default Devlist;
-
-
-
-
-
-
-
-
-
-

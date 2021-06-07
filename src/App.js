@@ -33,9 +33,6 @@ class App extends React.Component {
           </div>
         </section>
 
-
-
-
         <section className="post bg-dark" style={{padding: '100px 0px'}}>
          <h2 className="text-center mb-5" style={{color: 'tomato'}}><u>BLOG</u></h2>
            <div className="container-fluid">
