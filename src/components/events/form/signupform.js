@@ -8,6 +8,8 @@ import Textarea from '../form/textarea.js'
 
 
 
+
+
 class Signup extends React.Component {
 
     state = {
@@ -19,8 +21,20 @@ class Signup extends React.Component {
        country: '',
        bday: '',
        bio: '',
-       isAgreed: false
+       isAgreed: false,
+       
     }
+
+    
+
+    submitHandler = event => {
+        event.preventDefault();
+       if(!this.state.isAgreed) {
+           alert('You didn\'t agree to our terms and conditions')
+       } else {
+           console.log(this.state);
+       }
+   }
 
     inputchangehandler = event => {
         this.setState({[event.target.name]: event.target.value})
@@ -42,14 +56,6 @@ class Signup extends React.Component {
         this.setState({isAgreed: event.target.checked})
     }
 
-    submitHandler = event => {
-         event.preventDefault();
-        if(!this.state.isAgreed) {
-            alert('You didn\'t agree to our terms and conditions')
-        } else {
-            console.log(this.state);
-        }
-    }
 
     resetHandler = event => {
         this.setState({username: '',
@@ -68,7 +74,7 @@ class Signup extends React.Component {
         const {username, email, password, gender,skills,isAgreed} = this.state;
 
         return (
-            <div className="signupformcontainer" style={{marginTop: '200px', padding: '100px 0px'}}>
+            <div className="signupformcontainer" style={{marginTop: '100px', padding: '100px 0px'}}>
                 <h2 className="text-center text-primary"><u>A fully custom react signup form</u></h2>
                 <div className="container-fluid">
                     <div className="row">
@@ -77,8 +83,9 @@ class Signup extends React.Component {
 
 
 
-                          <form action="#" className="form p-2" style={{boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px', padding: '100px 50px', borderLeft: '15px solid #3b5'}}>
+                          <form action="#" className="form p-2" style={{padding: '100px 50px'}}>
                              <Textinput label={'name:'} name={'username'} type={'text'} id={'username'} placeholder={'type your name here'} value={username} onChange={this.inputchangehandler} />
+                             
 
                              <Textinput label={'email:'} name={'email'} type={'email'} id={'email'} placeholder={'type your valid email'} value={email} onChange={this.inputchangehandler} />
 
@@ -101,9 +108,9 @@ class Signup extends React.Component {
 
 
 
-                             <button type="submit" className="btn btn-success mt-5" onClick={this.submitHandler}>Submit</button>
+                             <button type="submit" className="btn btn-primary mt-5" onClick={this.submitHandler}>Create user</button>
 
-                             <button type="reset" className="btn btn-danger mt-5 mx-4" onClick={this.resetHandler}>Reset</button>
+                             <button type="reset" className="btn btn-danger mt-5 mx-4 px-3" onClick={this.resetHandler}>Reset</button>
 
                              
 
