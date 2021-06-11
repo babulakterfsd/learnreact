@@ -15,6 +15,18 @@ import Validfrom from './components/events/form/formvalidation.js'
 
 class App extends React.Component {
 
+  state = {
+    users: []
+  }
+
+  createUser = user => {
+    for(let a = 1; a <= this.state.users.length + 1; a++) {
+         user.id = a;
+    }
+    this.setState({users: [...this.state.users, user]})
+    
+  }
+
   render() {
     return (
       <>
@@ -66,7 +78,38 @@ class App extends React.Component {
       <Controlledform/> */}
       {/* <Form/> */}
       {/* <Signupform/> */}
-      <Validfrom/>
+      <Validfrom createUser={this.createUser}/>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 col-md-10 offset-md-1 my-5">
+            <h3 className="text-center mb-3"><u>List of all users</u></h3>
+      
+              <table class="table table-bordered table-dark table-striped table-hover text-center">
+              <thead className="text-success">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.state.users.map(user => (
+                  <tr>
+                    <td>{user.id}</td>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.password}</td>
+                  </tr>
+                ))}
+             </tbody>
+            </table>
+
+
+          </div>
+        </div>
+      </div>
       
 
 

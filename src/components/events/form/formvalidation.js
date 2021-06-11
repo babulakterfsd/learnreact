@@ -51,8 +51,7 @@ class Validform extends React.Component {
                 this.setState({errors: {name: '', email: '', password: ''}})
             }, 5000)
           }else{
-            console.log(this.state);
-            alert('user created successfully !')
+            this.props.createUser(this.state)
             this.setState({name: '', email: '', password: '', isagree: false, errors: {}})
         }
        }
@@ -77,7 +76,7 @@ class Validform extends React.Component {
                                 placeholder="type your name " className="form-control"
                                 onChange={this.changeHandler}
                             />
-                            {errors?.name && <small style={{color: "red"}}>{errors?.name}</small>}<br/>
+                            {errors.name && <small style={{color: "red"}}>{errors.name}</small>}<br/>
 
 
 
@@ -91,7 +90,7 @@ class Validform extends React.Component {
                             className="form-control"
                             onChange={this.changeHandler}/>
                             
-                            {errors?.email && <small style={{color: "red"}}>{errors?.email}</small>}<br/>
+                            {errors.email && <small style={{color: "red"}}>{errors.email}</small>}<br/>
 
 
 
@@ -105,7 +104,7 @@ class Validform extends React.Component {
                             className="form-control"
                             onChange={this.changeHandler}/>
 
-                            {errors?.password && <small style={{color: "red"}}>{errors?.password}</small>}<br/>
+                            {errors.password && <small style={{color: "red"}}>{errors.password}</small>}<br/>
 
 
 
